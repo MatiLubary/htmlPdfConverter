@@ -1,0 +1,29 @@
+{
+    "id": {
+        "name": {
+            "first": "Layla",
+            "last": "Clark"
+        },
+        "animal": "Dog",
+        "color": "Yellow",
+        "breed": "Carolina Dog"
+    },
+    "shots": [
+        {
+            "type": "Pfizer covid",
+            "date": "2017-07-27"
+        },
+        {
+            "type": "Moderna covid",
+            "date": "2017-07-27"
+        },
+        {
+            "type": "Janseen covid",
+            "date": "2017-07-27"
+        },
+        {
+            "type": "Sinofarm covid",
+            "date": "2017-07-27"
+        }
+    ]
+}

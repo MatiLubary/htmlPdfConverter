@@ -1,0 +1,81 @@
+<style type="text/css">
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 200;
+    }
+    table {
+        width: 100%;
+    }
+    table tr td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+
+
+    .flex {
+        display: flex;
+    }
+
+    .bg-yellow {
+        background-color: yellow;
+        border: 1px solid black;
+        padding: 8px;
+        justify-content: space-between;
+    }
+
+
+</style>
+
+<html>
+    <body>
+
+        <h1>Vaccine History</h1>
+        <p>{{id.name.first}} {{id.name.last}}</p>
+        <p>{{id.animal}} {{id.color}} {{id.breed}}</p>
+
+        <table>
+            <tr>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Date
+                </th>
+            </tr>
+            {{#each shots as |shot|}}
+            <tr>
+                <td>
+                    {{shot.type}}
+                </td>
+                <td>
+                    {{dateFormat shot.date 'MMM Do'}}
+                </td>
+            </tr>
+            {{/each}}
+        </table>
+
+
+
+
+        <div class="flex bg-yellow">
+            <div class="flex">
+                <p>Name:</p>&nbsp;
+                <p>Matias RL</p>
+            </div>
+            <div class="flex">
+                <p>Gender:</p>&nbsp;
+                <p>Male</p>
+            </div>
+  
+
+
+
+        </div>
+
+
+    </body>
+
+
+
+
+</html>
